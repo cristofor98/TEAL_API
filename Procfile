@@ -1,0 +1,1 @@
+web: gunicorn tealapi.wsgi --log-file -
