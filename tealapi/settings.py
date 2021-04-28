@@ -26,7 +26,7 @@ SECRET_KEY = 'kiold3w&%xsj9v8$4elgusyw%@9_a)za#$4kl0g6%8_pk=mg&q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
 ]
-
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'tealapi.urls'
 
 TEMPLATES = [
